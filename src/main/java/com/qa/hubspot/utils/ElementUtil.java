@@ -69,6 +69,16 @@ public class ElementUtil extends BasePage {
 		return driver.getTitle();
 	}
 
+	public String getAttributeTextAfterTrim(By locator) {
+		try {
+			return getElement(locator).getAttribute("textContext").trim();
+		} catch (Exception e) {
+			System.out.println(
+					"some exception got occurred while getting the text from a webelement using getAttribute....");
+		}
+		return null;
+	}
+
 	// **********************Actions Class Utils************************************
 
 	public void doDragAndDrop(By source, By target) {
