@@ -1,8 +1,6 @@
 pipeline {
   agent any
   stages {
-
-
         stage('Build Dev') {
           steps {
             sh 'mvn clean install -Denv="dev"'
@@ -25,17 +23,16 @@ pipeline {
           steps {
             sh 'mvn clean install'
           }
-        }
-        
-       
+        }         
       
-      
-      stage(''){
-      	steps{
+		stage('final'){
+		  steps{
       		sh 'echo "test execution is done"'
-      		}
+      	  }
       	}
       	
       }
-    }
+	}
+      
+
       
