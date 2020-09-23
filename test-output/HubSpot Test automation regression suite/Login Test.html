@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 15 17:13:33 EDT 2020</td>
+<td>Started on:</td><td>Wed Sep 23 15:40:20 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28726 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46787 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qa.hubspot.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest<br/>
-<a href="#Output-888000613" onClick='toggleBox("Output-888000613", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-521022428" onClick='toggleBox("Output-521022428", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-888000613" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-888000613">
-<a href='F:\Selenium Learning from Naveen\Sep2020POMSeries\target\surefire-reports\failure_screenshots\loginTest_15_09_2020_05_14_00.png'> <img src='F:\Selenium Learning from Naveen\Sep2020POMSeries\target\surefire-reports\failure_screenshots\loginTest_15_09_2020_05_14_00.png' height='100' width='100'/> </a><br/>
+<a href="#Output-521022428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-521022428">
+<a href='F:\Selenium Learning from Naveen\Sep2020POMSeries\target\surefire-reports\failure_screenshots\loginTest_23_09_2020_03_41_06.png'> <img src='F:\Selenium Learning from Naveen\Sep2020POMSeries\target\surefire-reports\failure_screenshots\loginTest_23_09_2020_03_41_06.png' height='100' width='100'/> </a><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: h1.dashboard-selector__title (tried for 10 second(s) with 500 milliseconds interval)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: h1.dashboard-selector__title (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.hubspot.utils.ElementUtil.waitForElementPresent(ElementUtil.java:191)
+	at com.qa.hubspot.utils.ElementUtil.waitForElementPresent(ElementUtil.java:201)
 	at com.qa.hubspot.utils.ElementUtil.doIsDisplayed(ElementUtil.java:64)
 	at com.qa.hubspot.pages.HomePage.getHomePageHeader(HomePage.java:35)
 	at com.qa.hubspot.tests.LoginPageTest.loginTest(LoginPageTest.java:47)
@@ -119,13 +119,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;h1.dashboard-selector__title&quot;}
-  (Session info: chrome=85.0.4183.102)
+  (Session info: chrome=85.0.4183.121)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\DEEPSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a3d15a30982bd98bfa7c17f111e792d3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\DEEPSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e73c110d9b501f0826782f7fc7c14a92
 *** Element info: {Using=css selector, value=h1.dashboard-selector__title}
 	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -144,11 +144,11 @@ Session ID: a3d15a30982bd98bfa7c17f111e792d3
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 32 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace888000613", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace888000613'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: h1.dashboard-selector__title (tried for 10 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace521022428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace521022428'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: h1.dashboard-selector__title (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.hubspot.utils.ElementUtil.waitForElementPresent(ElementUtil.java:191)
+	at com.qa.hubspot.utils.ElementUtil.waitForElementPresent(ElementUtil.java:201)
 	at com.qa.hubspot.utils.ElementUtil.doIsDisplayed(ElementUtil.java:64)
 	at com.qa.hubspot.pages.HomePage.getHomePageHeader(HomePage.java:35)
 	at com.qa.hubspot.tests.LoginPageTest.loginTest(LoginPageTest.java:47)
@@ -181,13 +181,13 @@ Session ID: a3d15a30982bd98bfa7c17f111e792d3
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;h1.dashboard-selector__title&quot;}
-  (Session info: chrome=85.0.4183.102)
+  (Session info: chrome=85.0.4183.121)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\DEEPSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a3d15a30982bd98bfa7c17f111e792d3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\DEEPSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e73c110d9b501f0826782f7fc7c14a92
 *** Element info: {Using=css selector, value=h1.dashboard-selector__title}
 	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -207,8 +207,8 @@ Session ID: a3d15a30982bd98bfa7c17f111e792d3
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 32 more
 </pre></div></td>
-<td>11</td>
-<td>com.qa.hubspot.tests.LoginPageTest@64a1923a</td></tr>
+<td>31</td>
+<td>com.qa.hubspot.tests.LoginPageTest@16a9a4f1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -221,12 +221,12 @@ Session ID: a3d15a30982bd98bfa7c17f111e792d3
 <td title='com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitle()'><b>verifyLoginPageTitle</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.LoginPageTest@64a1923a</td></tr>
+<td>com.qa.hubspot.tests.LoginPageTest@16a9a4f1</td></tr>
 <tr>
 <td title='com.qa.hubspot.tests.LoginPageTest.verifySignupLinkTest()'><b>verifySignupLinkTest</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
 <td></td>
-<td>6</td>
-<td>com.qa.hubspot.tests.LoginPageTest@64a1923a</td></tr>
+<td>5</td>
+<td>com.qa.hubspot.tests.LoginPageTest@16a9a4f1</td></tr>
 </table><p>
 </body>
 </html>

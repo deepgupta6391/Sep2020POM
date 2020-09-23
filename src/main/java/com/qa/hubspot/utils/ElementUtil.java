@@ -46,22 +46,22 @@ public class ElementUtil extends BasePage {
 	}
 
 	public void doSendKeys(By locator, String value) {
-		waitForElementPresent(locator, 10);
+		waitForElementPresent(locator, 30);
 		getElement(locator).sendKeys(value);
 	}
 
 	public void doClick(By locator) {
-		waitForElementPresent(locator, 10);
+		waitForElementPresent(locator, 30);
 		getElement(locator).click();
 	}
 
 	public String doGetText(By locator) {
-		waitForElementPresent(locator, 10);
+		waitForElementPresent(locator, 30);
 		return getElement(locator).getText().trim();
 	}
 
 	public boolean doIsDisplayed(By locator) {
-		waitForElementPresent(locator, 10);
+		waitForElementPresent(locator, 30);
 		return getElement(locator).isDisplayed();
 	}
 
@@ -94,7 +94,7 @@ public class ElementUtil extends BasePage {
 	}
 
 	public void doActionsClick(By locator) {
-		waitForElementPresent(locator, 10);
+		waitForElementPresent(locator, 30);
 		Actions action = new Actions(driver);
 		action.click(getElement(locator)).build().perform();
 	}
