@@ -1,6 +1,8 @@
 pipeline {
   agent any
   stages {
+	  
+	  
         stage('Test Run On Dev') {
           steps {
             sh 'mvn clean install -Denv="dev"'
@@ -31,8 +33,8 @@ pipeline {
       	  }
       	}
       	
-      }
-	}
+    }
+}
       
 
       
