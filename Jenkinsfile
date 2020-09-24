@@ -61,9 +61,9 @@ pipeline {
           }
         }
 
-        stage('safari') {
+        stage('chrome') {
           steps {
-            sh 'mvn test -Denv=qa -Dbrowser=ie'
+            sh 'mvn test -Denv=qa -Dbrowser=chrome'
           }
         }
 
