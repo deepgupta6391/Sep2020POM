@@ -1,15 +1,9 @@
 pipeline {
   agent any
   stages {
-<<<<<<< HEAD
     stage('Build Dev') {
       parallel {
         stage('Build Dev') {
-=======
-	  
-	  
-        stage('Test Run On Dev') {
->>>>>>> 96812ca6d3e4d2789d88cae645556d2a55a5fbd6
           steps {
             sh 'mvn clean install -DskipTests=true'
           }
@@ -42,7 +36,6 @@ pipeline {
           steps {
             sh 'mvn test -Denv=qa -Dbrowser=firefox'
           }
-<<<<<<< HEAD
         }
 
       }
@@ -99,18 +92,3 @@ pipeline {
     maven 'M3'
   }
 }
-=======
-        }         
-      
-		stage('final'){
-		  steps{
-      		sh 'echo "test execution is done"'
-      	  }
-      	}
-      	
-    }
-}
-      
-
-      
->>>>>>> 96812ca6d3e4d2789d88cae645556d2a55a5fbd6
