@@ -21,7 +21,7 @@ import io.qameta.allure.Story;
 @Story("US - 102: design basic login page with signup, title and login form...")
 public class LoginPageTest extends BaseTest {
 
-	@Test(priority = 2)
+	@Test(priority = 2 ,enabled = false)
 	@Description("verify Login Page Title Test....")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyLoginPageTitle() {
@@ -39,7 +39,7 @@ public class LoginPageTest extends BaseTest {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, enabled = false)
 	@Description("verify Login Test...")
 	@Severity(SeverityLevel.BLOCKER)
 	public void loginTest() {

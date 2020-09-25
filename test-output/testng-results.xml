@@ -1,28 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="2" total="6" passed="3">
   <reporter-output>
-    <line>
-      <![CDATA[<a href='F:\Selenium Learning from Naveen\Sep2020POMSeries\target\surefire-reports\failure_screenshots\loginTest_23_09_2020_03_41_06.png'> <img src='F:\Selenium Learning from Naveen\Sep2020POMSeries\target\surefire-reports\failure_screenshots\loginTest_23_09_2020_03_41_06.png' height='100' width='100'/> </a>]]>
-    </line>
   </reporter-output>
-  <suite name="HubSpot Test automation regression suite" duration-ms="46787" started-at="2020-09-23T15:40:20 EDT" finished-at="2020-09-23T15:41:07 EDT">
+  <suite name="HubSpot Test automation regression suite" duration-ms="59143" started-at="2020-09-25T16:00:43 EDT" finished-at="2020-09-25T16:01:42 EDT">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="46787" started-at="2020-09-23T15:40:20 EDT" finished-at="2020-09-23T15:41:07 EDT">
+    <test name="Login Test" duration-ms="20554" started-at="2020-09-25T16:00:43 EDT" finished-at="2020-09-25T16:01:03 EDT">
       <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@16a9a4f1]" name="setUp" is-config="true" duration-ms="6460" started-at="2020-09-23T15:40:21 EDT" finished-at="2020-09-23T15:40:27 EDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@517bd097]" name="setUp" is-config="true" duration-ms="11900" started-at="2020-09-25T16:00:44 EDT" finished-at="2020-09-25T16:00:56 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySignupLinkTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@16a9a4f1]" name="verifySignupLinkTest" duration-ms="5087" started-at="2020-09-23T15:40:27 EDT" finished-at="2020-09-23T15:40:32 EDT">
+        <test-method status="PASS" signature="verifySignupLinkTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@517bd097]" name="verifySignupLinkTest" duration-ms="6324" started-at="2020-09-25T16:00:56 EDT" finished-at="2020-09-25T16:01:02 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignupLinkTest -->
-        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@16a9a4f1]" name="verifyLoginPageTitle" duration-ms="68" started-at="2020-09-23T15:40:33 EDT" finished-at="2020-09-23T15:40:33 EDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@517bd097]" name="tearDown" is-config="true" duration-ms="883" started-at="2020-09-25T16:01:02 EDT" finished-at="2020-09-25T16:01:03 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginPageTitle -->
-        <test-method status="FAIL" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@16a9a4f1]" name="loginTest" duration-ms="31535" started-at="2020-09-23T15:40:33 EDT" finished-at="2020-09-23T15:41:05 EDT">
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+    </test> <!-- Login Test -->
+    <test name="Home Page Test" duration-ms="59143" started-at="2020-09-25T16:00:43 EDT" finished-at="2020-09-25T16:01:42 EDT">
+      <class name="com.qa.hubspot.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@388ffbc2]" name="setUp" is-config="true" duration-ms="13069" started-at="2020-09-25T16:00:43 EDT" finished-at="2020-09-25T16:00:56 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="homeSetUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@388ffbc2]" name="homeSetUp" is-config="true" duration-ms="8511" started-at="2020-09-25T16:00:56 EDT" finished-at="2020-09-25T16:01:04 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeSetUp -->
+        <test-method status="FAIL" signature="verifyHomePageHeader()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@388ffbc2]" name="verifyHomePageHeader" duration-ms="30478" started-at="2020-09-25T16:01:04 EDT" finished-at="2020-09-25T16:01:35 EDT">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for presence of element located by: By.cssSelector: h1.dashboard-selector__title (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -34,7 +43,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at com.qa.hubspot.utils.ElementUtil.waitForElementPresent(ElementUtil.java:201)
 at com.qa.hubspot.utils.ElementUtil.doIsDisplayed(ElementUtil.java:64)
 at com.qa.hubspot.pages.HomePage.getHomePageHeader(HomePage.java:35)
-at com.qa.hubspot.tests.LoginPageTest.loginTest(LoginPageTest.java:47)
+at com.qa.hubspot.tests.HomePageTest.verifyHomePageHeader(HomePageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -51,28 +60,23 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:767)
 at org.testng.TestRunner.run(TestRunner.java:588)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"h1.dashboard-selector__title"}
   (Session info: chrome=85.0.4183.121)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LENOVO-PC', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\DEEPSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e73c110d9b501f0826782f7fc7c14a92
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\DEEPSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 535b6dda732faded39796abd61356ca7
 *** Element info: {Using=css selector, value=h1.dashboard-selector__title}
-at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -88,21 +92,26 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
 at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 32 more
+... 27 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
-            <line>
-              <![CDATA[<a href='F:\Selenium Learning from Naveen\Sep2020POMSeries\target\surefire-reports\failure_screenshots\loginTest_23_09_2020_03_41_06.png'> <img src='F:\Selenium Learning from Naveen\Sep2020POMSeries\target\surefire-reports\failure_screenshots\loginTest_23_09_2020_03_41_06.png' height='100' width='100'/> </a>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@16a9a4f1]" name="tearDown" is-config="true" duration-ms="700" started-at="2020-09-23T15:41:06 EDT" finished-at="2020-09-23T15:41:07 EDT">
+        </test-method> <!-- verifyHomePageHeader -->
+        <test-method status="PASS" signature="verifyLoggedInUserTest()[pri:2, instance:com.qa.hubspot.tests.HomePageTest@388ffbc2]" name="verifyLoggedInUserTest" duration-ms="6156" started-at="2020-09-25T16:01:35 EDT" finished-at="2020-09-25T16:01:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedInUserTest -->
+        <test-method status="PASS" signature="verifyPageTitle()[pri:3, instance:com.qa.hubspot.tests.HomePageTest@388ffbc2]" name="verifyPageTitle" duration-ms="37" started-at="2020-09-25T16:01:41 EDT" finished-at="2020-09-25T16:01:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@388ffbc2]" name="tearDown" is-config="true" duration-ms="650" started-at="2020-09-25T16:01:41 EDT" finished-at="2020-09-25T16:01:42 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
-    </test> <!-- Login Test -->
+      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
+    </test> <!-- Home Page Test -->
   </suite> <!-- HubSpot Test automation regression suite -->
 </testng-results>
